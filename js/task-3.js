@@ -16,7 +16,7 @@ const images = [
     },
   ];
 
-  const imagesRef = document.getElementById('gallery')
+  const galleryRef = document.getElementById('gallery')
 
   const imagesTeg = ({url, alt}) => {
     return `<li> <img src = '${url}', alt = ${alt}, width = '300', height = '200'>`;
@@ -25,4 +25,4 @@ const images = [
 
 const cresteImages = images.map(imagesTeg).join('')
 
-imagesRef.insertAdjacentHTML(`beforeend`, createImages);
+galleryRef.insertAdjacentHTML(`beforeend`, createImages);
